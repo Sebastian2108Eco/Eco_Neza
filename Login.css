@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Cambiado para permitir que los elementos se apilen verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Título principal */
+h1 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(237, 235, 235);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Contenedor del encabezado */
+.header-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Imagen del avatar/logo en el encabezado */
+.avatar-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Imagen del avatar dentro del formulario */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+/* Etiquetas del formulario */
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Campos de entrada del formulario */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Enlaces de ayuda */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* Enlaces de ayuda */
+a.link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a.link + a.link {
+    margin-top: 5px; /* Añade un margen superior adicional entre los enlaces */
+}
+
+a.link:hover {
+    text-decoration: underline;
+}

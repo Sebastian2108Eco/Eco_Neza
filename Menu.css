@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos del encabezado */
+header {
+    width: 100%;
+    background-color: #056608;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button {
+    background-color: #0f7012;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #034012;
+}
+
+.logo {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el logo horizontalmente */
+}
+
+/* Estilos del contenido principal */
+main {
+    width: 80%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.welcome-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.welcome-section h3 {
+    font-size: 20px;
+    color: #666;
+}
+
+.welcome-section p {
+    text-align: left;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos de la sección del logo */
+.logo-section {
+    margin-top: 40px;
+}
+
+.logo-section h1 {
+    font-size: 80px;
+    color: #333;
+}
+
+.logo-section h2 {
+    font-size: 48px;
+    color: #4CAF50;
+}
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.avatar-logo {
+    width: 450px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10%;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Oculta el menú al principio */
+    width: 200px;
+    height: 100vh; /* Toma la altura completa de la ventana */
+    background-color: #333;
+    transition: left 0.3s ease; /* Agrega una transición suave */
+    padding-top: 60px; /* Deja espacio para el encabezado */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Estilos para el botón de menú */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; /* Asegura que esté por encima del menú */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/Login.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="../Resources/image.png" alt="Avatar" class="avatar-logo">
+        <h1>INICIO DE SESIÓN</h1>
+    </div>
+    <form action="../Controlador/Engine_Validacion.php" method="post">
+        <div class="container">
+            <!-- Etiqueta y campo de entrada para el nombre de usuario -->
+            <img src="../Resources/Avatar.png" alt="Avatar" class="avatar">
+            <label for="usuario"><b>Correo</b></label>
+            <input type="email" placeholder="Ingresa Correo Electronico" name="Usuario" required>
+
+            <!-- Etiqueta y campo de entrada para la contraseña -->
+            <label for="contraseña"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingresa Contraseña" name="Contraseña" required>
+
+            <!-- Botón de envío del formulario -->
+            <button type="submit">Iniciar Sesión</button>
+            <!-- Enlaces de ayuda -->
+            <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+            <a href="../Vistas/Form_Registro.html" class="link">¿No tienes cuenta? Crear una</a>
+        </div>
+    </form>
+</body>
+
+</html>

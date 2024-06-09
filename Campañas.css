@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    width: 100%;
+    background-color: #056608;
+    display: flex;
+    justify-content: space-between; /* Para separar los elementos del menú y el logo */
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button {
+    background-color: #0f7012;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #034012;
+}
+
+/* Estilos del contenido principal */
+main {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto; /* Centra el contenido */
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    color: #037216;
+    margin-bottom: 20px;
+}
+
+.campaign-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el número de columnas automáticamente */
+    gap: 20px; /* Espacio entre las campañas */
+    justify-content: center; /* Centra las campañas horizontalmente */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las campañas se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra las campañas horizontalmente */
+    gap: 20px; /* Espacio entre las campañas */
+}
+
+.campaign {
+    width: 100%; /* Se ajusta al contenedor */
+    max-width: 300px; /* Ancho máximo para las campañas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd; /* Añade un borde ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+}
+
+
+.campaign img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.campaign p {
+    color: #333;
+    font-size: 20px;
+    margin: 15px 0;
+    word-wrap: break-word; /* Permite que las palabras se dividan en varias líneas */
+    overflow: hidden; /* Oculta cualquier texto que desborde del contenedor */
+    max-height: 100px; /* Establece una altura máxima para el contenedor */
+}
+
+
+
+.campaign {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center; /* Centra el contenido del contenedor */
+}
+
+.campaign button {
+    width: 100%; /* Botón ocupa todo el ancho del contenedor */
+    max-width: 200px; /* Ancho máximo del botón */
+    margin-top: 20px; /* Espacio superior entre el texto y el botón */
+    background-color: #0f7012;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.campaign button:hover {
+    background-color: #034012;
+}
+
+
+/* Estilos del menú */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu-open .menu {
+    left: 0;
+}
+
+/* Estilos para el botón de menú */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; /* Asegura que esté por encima del menú */
+}
